@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F58A3C58-150E-45B8-AEFC-0A3CFD9FE17D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL_TV</RootNamespace>
+    <AssemblyName>QL_TV</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bien ban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bien ban.Designer.cs">
+      <DependentUpon>bien ban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucvu.Designer.cs">
+      <DependentUpon>Chucvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataset_QLTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset_QLTV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_thethuvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_thethuvien.Designer.cs">
+      <DependentUpon>frm_thethuvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muonsach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="muonsach.Designer.cs">
+      <DependentUpon>muonsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muontrasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muontrasach.Designer.cs">
+      <DependentUpon>muontrasach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phanquyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="phanquyen.Designer.cs">
+      <DependentUpon>phanquyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_Nguoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_Nguoidung.Designer.cs">
+      <DependentUpon>QL_Nguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_nhomnguoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_nhomnguoidung.Designer.cs">
+      <DependentUpon>QL_nhomnguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_sach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QL_sach.Designer.cs">
+      <DependentUpon>QL_sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_tailiêusach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QL_tailiêusach.Designer.cs">
+      <DependentUpon>QL_tailiêusach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlydocgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlydocgia.Designer.cs">
+      <DependentUpon>Quanlydocgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlynhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlynhanvien.Designer.cs">
+      <DependentUpon>Quanlynhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlysach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlysach.Designer.cs">
+      <DependentUpon>Quanlysach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thethuvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thethuvien.Designer.cs">
+      <DependentUpon>thethuvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thiethai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thiethai.Designer.cs">
+      <DependentUpon>Thiethai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê.Designer.cs">
+      <DependentUpon>Thống kê.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trasach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trasach.Designer.cs">
+      <DependentUpon>trasach.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bien ban.resx">
+      <DependentUpon>bien ban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucvu.resx">
+      <DependentUpon>Chucvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_thethuvien.resx">
+      <DependentUpon>frm_thethuvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muonsach.resx">
+      <DependentUpon>muonsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muontrasach.resx">
+      <DependentUpon>muontrasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phanquyen.resx">
+      <DependentUpon>phanquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QL_Nguoidung.resx">
+      <DependentUpon>QL_Nguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_nhomnguoidung.resx">
+      <DependentUpon>QL_nhomnguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_sach.resx">
+      <DependentUpon>QL_sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_tailiêusach.resx">
+      <DependentUpon>QL_tailiêusach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlydocgia.resx">
+      <DependentUpon>Quanlydocgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlynhanvien.resx">
+      <DependentUpon>Quanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlysach.resx">
+      <DependentUpon>Quanlysach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thethuvien.resx">
+      <DependentUpon>thethuvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thiethai.resx">
+      <DependentUpon>Thiethai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê.resx">
+      <DependentUpon>Thống kê.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trasach.resx">
+      <DependentUpon>trasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dataset_QLTV.xsc">
+      <DependentUpon>dataset_QLTV.xsd</DependentUpon>
+    </None>
+    <None Include="dataset_QLTV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset_QLTV.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dataset_QLTV.xss">
+      <DependentUpon>dataset_QLTV.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_left_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_right_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank_card_front_side_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_book_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading_ebook_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rules_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_pcd8iwyVUf1wfsg7xo1_400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_circle_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_skin_type_7_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_1_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_1_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_insurance_card_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_close_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_group_man_man_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_circle_32px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
